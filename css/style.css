@@ -1,0 +1,233 @@
+/*~ RESET ~*/
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+/*~ GENERAL ~*/
+	main{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #313131;
+	}
+	header{
+		text-align: center;
+		background-image: url("../images/font_header.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 43em;
+		color: white;
+		border-bottom: 2px solid #30C919;
+	}
+	a{
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+	}
+	a:hover{
+		color: #30C919;
+	}
+	li{
+		list-style: none;
+	}
+	span{
+		color: #30C919;
+	}
+	article{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	section{
+		background-color: #E0E0E0;
+		color: #3A3A3A;
+	}
+	p{
+		margin: 0.5em;
+	}
+	h3{
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	h3 span{
+		border-bottom: 2px solid #30C919;
+		color: #3A3A3A;
+	}
+	h4{
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+	h4 span{
+		border-bottom: 2px solid #30C919;
+		color: #3A3A3A;
+	}
+	.text_gras{
+		font-weight: bold;
+	}
+/*--------------------------------------*/
+
+/*~ RESPONSIVE TELEPHONE ~*/
+@media all and (max-width: 750px) {
+	/*~ HEADER ~*/
+		header{
+			height: 40em;
+		}
+		header li{
+			display: inline-flex;
+		}
+	/*~ NAV ~*/
+		nav{
+			animation-duration: 1s;
+			animation-name: nav;
+		}
+		.nav_pc{
+			display: none;
+		}
+		.nav_portable ul{
+			display: flex;
+			justify-content: center;
+			position: fixed;
+			width: 100%;
+			background-color: rgba(158, 158, 158, 0.3);
+			border-radius: 0px 0px 60px 60px;
+			border-bottom: 3px solid rgba(48, 201, 25, 0.4);
+		}
+		.nav_portable li{
+			font-size: 24px;
+			margin-left: 0.3em;
+			margin-right: 0.3em;
+		}
+	/*~ TITRE/TEXTE ~*/
+		h1{
+			margin-top: 3em;
+			animation-duration: 2s;
+			animation-name: h1;
+		}
+		h2{
+			animation-duration: 2s;
+			animation-name: h2;
+			margin-bottom: 2em;
+			color: #30C919;
+		}
+		.anim_1, .anim_2, .anim_3, .anim_4{
+			font-size: 18px;
+		}
+		/*~ ANIMATION DU LI HEADER ~*/
+		.anim_1{
+			animation-duration: 2s;
+			animation-name: anim_1;
+		}
+		.anim_2{
+			animation-duration: 3s;
+			animation-name: anim_2;
+		}
+		.anim_3{
+			animation-duration: 4s;
+			animation-name: anim_3;
+		}
+		.anim_4{
+			animation-duration: 5s;
+			animation-name: anim_4;
+		}
+	/*~ MAIN~*/
+		article{
+			flex-direction: column;
+		}
+		h3{
+			font-size: 26px;
+		}
+		h4{
+			font-size: 18px;
+		}
+		/* IMAGE PARALLAX */
+		#section1{
+			background-image: url('../images/teste.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			height: 7em;
+		}
+	/*~ SECTION 1 ~*/
+		.transport{
+			display: flex;
+			justify-content: space-around;
+			text-align: center;
+			font-size: 18px;
+			margin: 1em;
+		}
+	/*~ SECTION 2 ~*/
+/*--------------------------------*/
+	/*~ KEYFRAMES ~*/
+
+		/*~ NAV ~*/
+		@keyframes nav{
+			0%{
+					transform: translateY(-200px);
+				}
+			50%{
+					transform: translateY(-100px);
+				}
+			100%{
+					transform: translateY(0px);
+				}
+		}
+		/*~ H1 ~*/
+		@keyframes h1{
+			0%{
+					transform: translateX(-500px);
+				}
+			100%{
+					transform: translateX(0px);
+				}
+		}
+		/*~ H2 ~*/
+		@keyframes h2{
+			0%{
+					transform: scale(0);
+				}
+			100%{
+					transform: scale(1);
+				}
+		}
+		/*~ LI HEADER ~*/
+			/*~ anim_1 ~*/
+		@keyframes anim_1{
+			0%{
+					opacity: 0;
+				}
+			100%{
+					opacity: 1;
+				}
+		}
+		/*~ anim_2 ~*/
+	@keyframes anim_2{
+		0%{
+				opacity: 0;
+			}
+		100%{
+				opacity: 1;
+			}
+	}
+		/*~ anim_3 ~*/
+	@keyframes anim_3{
+		0%{
+				opacity: 0;
+			}
+		100%{
+				opacity: 1;
+			}
+	}
+		/*~ anim_4 ~*/
+	@keyframes anim_4{
+		0%{
+				opacity: 0;
+			}
+		100%{
+				opacity: 1;
+			}
+	}
+}
