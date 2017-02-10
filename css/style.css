@@ -143,13 +143,25 @@
 			font-size: 18px;
 		}
 		/* IMAGE PARALLAX */
-		#section1{
-			background-image: url('../images/teste.png');
+		#section1, #section2, #section3, #section4, #section5{
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
-			height: 7em;
+			height: 8em;
+		}
+		/* PLACEMENT DES IMAGES */
+		#section1{
+			background-image: url('../images/img1.png');
+		}
+		#section2{
+			background-image: url('../images/img2.png');
+		}
+		#section3{
+			background-image: url('../images/img3.png');
+		}
+		#section4{
+			background-image: url('../images/img4.jpg');
 		}
 	/*~ SECTION 1 ~*/
 		.transport{
@@ -160,6 +172,26 @@
 			margin: 1em;
 		}
 	/*~ SECTION 2 ~*/
+		.diplomes, .formations{
+			margin: 0.5em;
+		}
+	/*~ SECTION 3 ~*/
+		.icon{
+			display: flex;
+			justify-content: space-around;
+			margin: 0.5em;
+		}
+		.icon .devicon-html5-plain-wordmark, .devicon-css3-plain-wordmark,
+		.devicon-javascript-plain, .devicon-jquery-plain-wordmark,
+		.devicon-php-plain, .devicon-mysql-plain-wordmark,
+		.devicon-linux-plain, .devicon-git-plain-wordmark,
+		.devicon-github-plain-wordmark, .devicon-photoshop-plain{
+			font-size: 40px;
+		}
+	/*~ SECTION 4 ~*/
+		.experience i{
+			margin: 0.3em;
+		}
 /*--------------------------------*/
 	/*~ KEYFRAMES ~*/
 
