@@ -210,7 +210,7 @@
 		#section1, #section2, #section3, #section4, #section5{
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-attachment: scroll;
+			background-attachment: fixed;
 			background-position: center;
 			height: 10em;
 		}
