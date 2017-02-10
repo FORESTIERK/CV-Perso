@@ -206,31 +206,33 @@
 		h4{
 			font-size: 18px;
 		}
-		/* IMAGE PARALLAX */
-		#section1, #section2, #section3, #section4, #section5{
-			overflow: auto;
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-attachment: fixed;
-			background-position: center;
-			height: 10em;
-		}
-		/* PLACEMENT DES IMAGES */
-		#section1{
-			background-image: url('../images/img1.png');
-		}
-		#section2{
-			background-image: url('../images/img2.png');
-		}
-		#section3{
-			background-image: url('../images/img3.png');
-		}
-		#section4{
-			background-image: url('../images/img4.jpg');
-		}
-		#section5{
-			background-image: url('../images/img5.jpg');
-		}
+		@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+			/* IMAGE PARALLAX */
+			#section1, #section2, #section3, #section4, #section5{
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				background-position: center;
+				height: 10em;
+			}
+			/* PLACEMENT DES IMAGES */
+			#section1{
+				background-image: url('../images/img1.png');
+			}
+			#section2{
+				background-image: url('../images/img2.png');
+			}
+			#section3{
+				background-image: url('../images/img3.png');
+			}
+			#section4{
+				background-image: url('../images/img4.jpg');
+			}
+			#section5{
+				background-image: url('../images/img5.jpg');
+			}
+	  }
+
 	/*~ SECTION 1 ~*/
 		.transport{
 			display: -webkit-box;
