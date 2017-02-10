@@ -213,7 +213,7 @@
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
-			height: 10em;
+			height: 10em !important;
 		}
 		/* PLACEMENT DES IMAGES */
 		#section1{
