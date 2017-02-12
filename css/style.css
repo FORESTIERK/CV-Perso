@@ -110,7 +110,7 @@
 /*--------------------------------------*/
 
 /*~ RESPONSIVE TELEPHONE ~*/
-@media all and (max-device-width: 750px) {
+@media all and (max-device-width: 750px) and (orientation: portrait) {
 	/*~ HEADER ~*/
 		header{
 			width: 100%;
