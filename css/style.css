@@ -109,16 +109,16 @@
 	}
 	/* IMAGE PARALLAX */
 	#section1, #section2, #section3, #section4, #section5{
-		height: auto;
-		background-position: 50% 50%;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
 		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		height: 15em;
 	}
 /*--------------------------------------*/
 
 /*~ RESPONSIVE TELEPHONE ~*/
-@media all and (max-device-width: 750px) and (orientation: portrait) {
+@media all and (max-device-width: 750px) {
 	/*~ HEADER ~*/
 		header{
 			width: 100%;
@@ -215,44 +215,29 @@
 			font-size: 18px;
 		}
 
-		/* IMAGE PARALLAX PORTABLE */
+		/* IMAGE PARALLAX */
 		#section1, #section2, #section3, #section4, #section5{
-			height: 8em;
-		  background-position: 50% 50%;
-		  background-repeat: no-repeat;
-		  background-size: cover;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			height: 10em;
 		}
 		/* PLACEMENT DES IMAGES */
 		#section1{
 			background-image: url('../images/img1.png');
-			background-attachment: scroll;
-	    background-position: top;
-	    background-size: auto;
-
 		}
 		#section2{
 			background-image: url('../images/img2.png');
-			background-attachment: scroll;
-	    background-position: top;
-	    background-size: auto;
 		}
 		#section3{
 			background-image: url('../images/img3.png');
-			background-attachment: scroll;
-	    background-position: top;
-	    background-size: auto;
 		}
 		#section4{
 			background-image: url('../images/img4.jpg');
-			background-attachment: scroll;
-	    background-position: top;
-	    background-size: auto;
 		}
 		#section5{
 			background-image: url('../images/img5.jpg');
-			background-attachment: scroll;
-	    background-position: top;
-	    background-size: auto;
 		}
 	/*~ SECTION 1 ~*/
 		.transport{
