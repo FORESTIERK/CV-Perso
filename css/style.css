@@ -20,6 +20,7 @@
 		    -ms-flex-align: center;
 		        align-items: center;
 		background-color: #313131;
+		width: 100%;
 	}
 	header{
 		text-align: center;
@@ -55,10 +56,12 @@
 		        flex-direction: row;
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
+		width: 100%;
 	}
 	section{
 		background-color: #E0E0E0;
 		color: #3A3A3A;
+		width: 100%;
 	}
 	p{
 		margin: 0.5em;
@@ -107,6 +110,9 @@
 	.text_gras{
 		font-weight: bold;
 	}
+	.container{
+		width: 100%;
+	}
 	/* IMAGE PARALLAX */
 	#section1, #section2, #section3, #section4, #section5{
 		background-repeat: no-repeat;
@@ -118,7 +124,7 @@
 /*--------------------------------------*/
 
 /*~ RESPONSIVE TELEPHONE ~*/
-@media all and (max-device-width: 750px) {
+@media all and (max-width: 750px) {
 	/*~ HEADER ~*/
 		header{
 			width: 100%;
@@ -153,7 +159,7 @@
 			border-bottom: 3px solid rgba(48, 201, 25, 0.4);
 		}
 		.nav_portable li{
-			font-size: 24px;
+			font-size: 1.5em;
 			margin-left: 0.3em;
 			margin-right: 0.3em;
 		}
@@ -174,7 +180,7 @@
 			color: #30C919;
 		}
 		.anim_1, .anim_2, .anim_3, .anim_4{
-			font-size: 18px;
+			font-size: 1.125em;
 		}
 		/*~ ANIMATION DU LI HEADER ~*/
 		.anim_1{
@@ -202,19 +208,22 @@
 			        animation-name: anim_4;
 		}
 	/*~ MAIN~*/
+		main{
+			width: 100%;
+		}
 		article{
 			-webkit-box-orient: vertical;
 			-webkit-box-direction: normal;
 			    -ms-flex-direction: column;
 			        flex-direction: column;
+			width: 100%;
 		}
 		h3{
-			font-size: 26px;
+			font-size: 1.625em;
 		}
 		h4{
-			font-size: 18px;
+			font-size: 1.125em;
 		}
-
 		/* IMAGE PARALLAX */
 		#section1, #section2, #section3, #section4, #section5{
 			background-repeat: no-repeat;
@@ -247,7 +256,7 @@
 			-ms-flex-pack: distribute;
 			    justify-content: space-around;
 			text-align: center;
-			font-size: 18px;
+			font-size: 1.125em;
 			margin: 1em;
 		}
 	/*~ SECTION 2 ~*/
@@ -268,7 +277,7 @@
 		.devicon-php-plain, .devicon-mysql-plain-wordmark,
 		.devicon-linux-plain, .devicon-git-plain-wordmark,
 		.devicon-github-plain-wordmark, .devicon-photoshop-plain{
-			font-size: 40px;
+			font-size: 2.5em;
 		}
 	/*~ SECTION 4 ~*/
 		.experience i{
@@ -279,20 +288,439 @@
 			text-align: center;
 		}
 		footer h5{
-			font-size: 18px;
+			font-size: 1.125em;
 			margin: 0.5em;
 			color: #fff;
 			border-bottom: 2px solid #30C919;
 		}
 		footer .fa{
 			margin: 0.2em;
-			font-size: 40px;
+			font-size: 2.5em;
 			cursor: pointer;
 			color: #fff;
 		}
 		footer .fa:hover{
 			color: #30C919;
 		}
+}
+/*--------------------------------------*/
+
+/*~ RESPONSIVE TELEPHONE ~*/
+@media all and (min-width: 751px) and (max-width: 980px) {
+	/*~ HEADER ~*/
+		header{
+			width: 100%;
+			height: 41em;
+		}
+		header li{
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+		}
+	/*~ NAV ~*/
+		nav{
+			-webkit-animation-duration: 1s;
+			        animation-duration: 1s;
+			-webkit-animation-name: nav;
+			        animation-name: nav;
+		}
+		.nav_portable{
+			display: none;
+		}
+		.nav_pc ul{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			position: fixed;
+			width: 100%;
+			background-color: rgba(158, 158, 158, 0.3);
+			border-radius: 0px 0px 60px 60px;
+			border-bottom: 3px solid rgba(48, 201, 25, 0.4);
+		}
+		.nav_pc li{
+			font-size: 1.313em;
+			margin-left: 0.3em;
+			margin-right: 0.3em;
+		}
+	/*~ TITRE/TEXTE ~*/
+		h1{
+			margin-top: 3em;
+			-webkit-animation-duration: 2s;
+			        animation-duration: 2s;
+			-webkit-animation-name: h1;
+			        animation-name: h1;
+		}
+		h2{
+			-webkit-animation-duration: 2s;
+			        animation-duration: 2s;
+			-webkit-animation-name: h2;
+			        animation-name: h2;
+			margin-bottom: 2em;
+			color: #30C919;
+		}
+		.anim_1, .anim_2, .anim_3, .anim_4{
+			font-size: 1.5em;
+		}
+		/*~ ANIMATION DU LI HEADER ~*/
+		.anim_1{
+			-webkit-animation-duration: 2s;
+			        animation-duration: 2s;
+			-webkit-animation-name: anim_1;
+			        animation-name: anim_1;
+		}
+		.anim_2{
+			-webkit-animation-duration: 3s;
+			        animation-duration: 3s;
+			-webkit-animation-name: anim_2;
+			        animation-name: anim_2;
+		}
+		.anim_3{
+			-webkit-animation-duration: 4s;
+			        animation-duration: 4s;
+			-webkit-animation-name: anim_3;
+			        animation-name: anim_3;
+		}
+		.anim_4{
+			-webkit-animation-duration: 5s;
+			        animation-duration: 5s;
+			-webkit-animation-name: anim_4;
+			        animation-name: anim_4;
+		}
+	/*~ MAIN~*/
+		main{
+			width: 100%;
+		}
+		article{
+			flex-direction: row;
+			width: 100%;
+		}
+		h3{
+			font-size: 2.125em;
+		}
+		h4{
+			font-size: 1.75em;
+		}
+		p{
+			font-size: 1.125em;
+		}
+		/* IMAGE PARALLAX */
+		#section1, #section2, #section3, #section4, #section5{
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			height: 10em;
+		}
+		/* PLACEMENT DES IMAGES */
+		#section1{
+			background-image: url('../images/img1.png');
+		}
+		#section2{
+			background-image: url('../images/img2.png');
+		}
+		#section3{
+			background-image: url('../images/img3.png');
+		}
+		#section4{
+			background-image: url('../images/img4.jpg');
+		}
+		#section5{
+			background-image: url('../images/img5.jpg');
+		}
+	/*~ SECTION 1 ~*/
+		.transport{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+			text-align: center;
+			font-size: 1.250em;
+			margin: 1em;
+		}
+		.art_transport{
+			display: flex;
+			flex-direction: column;
+		}
+	/*~ SECTION 2 ~*/
+		.diplomes, .formations{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1em;
+			margin: 0.5em;
+		}
+		.art_diplome{
+			display: flex;
+			flex-direction: column;
+		}
+	/*~ SECTION 3 ~*/
+		.icon{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+			flex-direction: column;
+			align-items: center;
+			margin: 0.5em;
+		}
+		.icon .devicon-html5-plain-wordmark, .devicon-css3-plain-wordmark,
+		.devicon-javascript-plain, .devicon-jquery-plain-wordmark,
+		.devicon-php-plain, .devicon-mysql-plain-wordmark,
+		.devicon-linux-plain, .devicon-git-plain-wordmark,
+		.devicon-github-plain-wordmark, .devicon-photoshop-plain{
+			font-size: 2.5em;
+		}
+	/*~ SECTION 4 ~*/
+		.experience i{
+			margin: 0.3em;
+		}
+		.experience{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1.125em;
+			padding: 0.5em;
+		}
+	/*~ FORMULAIRE ~*/
+		.contact fieldset{
+			width: 40%;
+			font-size: 1.125em;
+		}
+	/*~ FOOTER ~*/
+		footer{
+			text-align: center;
+		}
+		footer h5{
+			font-size: 1.375em;
+			margin: 0.5em;
+			color: #fff;
+			border-bottom: 2px solid #30C919;
+		}
+		footer .fa{
+			margin: 0.2em;
+			font-size: 3.75em;
+			cursor: pointer;
+			color: #fff;
+		}
+		footer .fa:hover{
+			color: #30C919;
+		}
+}
+/*--------------------------------------*/
+
+/*~ RESPONSIVE TELEPHONE ~*/
+@media all and (min-width: 981px){
+	/*~ HEADER ~*/
+		header{
+			width: 100%;
+			height: 41em;
+		}
+		header li{
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+		}
+	/*~ NAV ~*/
+		nav{
+			-webkit-animation-duration: 1s;
+			        animation-duration: 1s;
+			-webkit-animation-name: nav;
+			        animation-name: nav;
+		}
+		.nav_portable{
+			display: none;
+		}
+		.nav_pc ul{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			position: fixed;
+			width: 100%;
+			background-color: rgba(158, 158, 158, 0.3);
+			border-radius: 0px 0px 60px 60px;
+			border-bottom: 3px solid rgba(48, 201, 25, 0.4);
+		}
+		.nav_pc li{
+			font-size: 1.75em;
+			margin-left: 0.3em;
+			margin-right: 0.3em;
+		}
+	/*~ TITRE/TEXTE ~*/
+		h1{
+			margin-top: 4em;
+			-webkit-animation-duration: 2s;
+			        animation-duration: 2s;
+			-webkit-animation-name: h1;
+			        animation-name: h1;
+			font-size: 3.125em;
+		}
+		h2{
+			-webkit-animation-duration: 2s;
+			        animation-duration: 2s;
+			-webkit-animation-name: h2;
+			        animation-name: h2;
+			margin-bottom: 2em;
+			font-size: 1.875em;
+			color: #30C919;
+		}
+		.anim_1, .anim_2, .anim_3, .anim_4{
+			font-size: 1.563em;
+		}
+		/*~ ANIMATION DU LI HEADER ~*/
+		.anim_1{
+			-webkit-animation-duration: 2s;
+			        animation-duration: 2s;
+			-webkit-animation-name: anim_1;
+			        animation-name: anim_1;
+		}
+		.anim_2{
+			-webkit-animation-duration: 3s;
+			        animation-duration: 3s;
+			-webkit-animation-name: anim_2;
+			        animation-name: anim_2;
+		}
+		.anim_3{
+			-webkit-animation-duration: 4s;
+			        animation-duration: 4s;
+			-webkit-animation-name: anim_3;
+			        animation-name: anim_3;
+		}
+		.anim_4{
+			-webkit-animation-duration: 5s;
+			        animation-duration: 5s;
+			-webkit-animation-name: anim_4;
+			        animation-name: anim_4;
+		}
+	/*~ MAIN~*/
+		main{
+			width: 100%;
+		}
+		article{
+			flex-direction: row;
+			width: 100%;
+		}
+		h3{
+			font-size: 2.250em;
+		}
+		h4{
+			font-size: 1.875em;
+		}
+		p{
+			font-size: 1.250em;
+		}
+		/* IMAGE PARALLAX */
+		#section1, #section2, #section3, #section4, #section5{
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			height: 14em;
+		}
+		/* PLACEMENT DES IMAGES */
+		#section1{
+			background-image: url('../images/img1.png');
+		}
+		#section2{
+			background-image: url('../images/img2.png');
+		}
+		#section3{
+			background-image: url('../images/img3.png');
+		}
+		#section4{
+			background-image: url('../images/img4.jpg');
+		}
+		#section5{
+			background-image: url('../images/img5.jpg');
+		}
+	/*~ SECTION 1 ~*/
+		.transport{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+			text-align: center;
+			font-size: 1.5em;
+			margin: 1em;
+		}
+		.art_transport{
+			display: flex;
+			flex-direction: column;
+		}
+	/*~ SECTION 2 ~*/
+		.diplomes, .formations{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1.250em;
+			margin: 0.5em;
+		}
+		.art_diplome{
+			display: flex;
+			flex-direction: column;
+		}
+	/*~ SECTION 3 ~*/
+		.icon{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+			flex-direction: column;
+			align-items: center;
+			margin: 0.5em;
+		}
+		.icon .devicon-html5-plain-wordmark, .devicon-css3-plain-wordmark,
+		.devicon-javascript-plain, .devicon-jquery-plain-wordmark,
+		.devicon-php-plain, .devicon-mysql-plain-wordmark,
+		.devicon-linux-plain, .devicon-git-plain-wordmark,
+		.devicon-github-plain-wordmark, .devicon-photoshop-plain{
+			font-size: 4.375em;
+		}
+	/*~ SECTION 4 ~*/
+		.experience i{
+			margin: 0.3em;
+		}
+		.experience{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1.250em;
+			padding: 0.5em;
+		}
+	/*~ FORMULAIRE ~*/
+		.contact fieldset{
+			width: 40%;
+			font-size: 1.250em;
+		}
+	/*~ FOOTER ~*/
+		footer{
+			text-align: center;
+		}
+		footer h5{
+			font-size: 1.625em;
+			margin: 0.5em;
+			color: #fff;
+			border-bottom: 2px solid #30C919;
+		}
+		footer .fa{
+			margin: 0.2em;
+			font-size: 5em;
+			cursor: pointer;
+			color: #fff;
+		}
+		footer .fa:hover{
+			color: #30C919;
+		}
+}
 /*--------------------------------*/
 	/*~ KEYFRAMES ~*/
 
@@ -328,8 +756,8 @@
 		/*~ H1 ~*/
 		@-webkit-keyframes h1{
 			0%{
-					-webkit-transform: translateX(-500px);
-					        transform: translateX(-500px);
+					-webkit-transform: translateX(-1000px);
+					        transform: translateX(-1000px);
 				}
 			100%{
 					-webkit-transform: translateX(0px);
@@ -338,8 +766,8 @@
 		}
 		@keyframes h1{
 			0%{
-					-webkit-transform: translateX(-500px);
-					        transform: translateX(-500px);
+					-webkit-transform: translateX(-1000px);
+					        transform: translateX(-1000px);
 				}
 			100%{
 					-webkit-transform: translateX(0px);
@@ -436,4 +864,3 @@
 				opacity: 1;
 			}
 	}
-}
