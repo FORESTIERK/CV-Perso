@@ -107,6 +107,14 @@
 	.text_gras{
 		font-weight: bold;
 	}
+	/* IMAGE PARALLAX */
+	#section1, #section2, #section3, #section4, #section5{
+		height: auto;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
 /*--------------------------------------*/
 
 /*~ RESPONSIVE TELEPHONE ~*/
@@ -207,29 +215,44 @@
 			font-size: 18px;
 		}
 
-		/* IMAGE PARALLAX */
+		/* IMAGE PARALLAX PORTABLE */
 		#section1, #section2, #section3, #section4, #section5{
-			height: auto;
+			height: 8em;
 		  background-position: 50% 50%;
 		  background-repeat: no-repeat;
-		  background-attachment: fixed;
 		  background-size: cover;
 		}
 		/* PLACEMENT DES IMAGES */
 		#section1{
 			background-image: url('../images/img1.png');
+			background-attachment: scroll;
+	    background-position: top;
+	    background-size: auto;
+
 		}
 		#section2{
 			background-image: url('../images/img2.png');
+			background-attachment: scroll;
+	    background-position: top;
+	    background-size: auto;
 		}
 		#section3{
 			background-image: url('../images/img3.png');
+			background-attachment: scroll;
+	    background-position: top;
+	    background-size: auto;
 		}
 		#section4{
 			background-image: url('../images/img4.jpg');
+			background-attachment: scroll;
+	    background-position: top;
+	    background-size: auto;
 		}
 		#section5{
 			background-image: url('../images/img5.jpg');
+			background-attachment: scroll;
+	    background-position: top;
+	    background-size: auto;
 		}
 	/*~ SECTION 1 ~*/
 		.transport{
