@@ -107,6 +107,14 @@
 	.text_gras{
 		font-weight: bold;
 	}
+	/* IMAGE PARALLAX */
+	#section1, #section2, #section3, #section4, #section5{
+		height: auto;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
 /*--------------------------------------*/
 
 /*~ RESPONSIVE TELEPHONE ~*/
@@ -206,13 +214,11 @@
 		h4{
 			font-size: 18px;
 		}
-
-		/* IMAGE PARALLAX */
 		#section1, #section2, #section3, #section4, #section5{
 			background-attachment: scroll;
 	    background-position: top;
 	    background-size: auto;
-			height: 8em !important;
+			height: 8em;
 		}
 		/* PLACEMENT DES IMAGES */
 		#section1{
